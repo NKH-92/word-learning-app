@@ -41,7 +41,7 @@ const Learning = () => {
   const sendToAI = useCallback(async (messageToSend, currentChatHistory) => {
     setIsLoading(true);
     try {
-      const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash", systemInstruction: systemPrompt });
+      const model = genAI.getGenerativeModel({ model: "gemini-2.5-flash", systemInstruction: systemPrompt });
       const chat = model.startChat({ history: currentChatHistory });
       const result = await chat.sendMessage(messageToSend);
       const response = await result.response;
