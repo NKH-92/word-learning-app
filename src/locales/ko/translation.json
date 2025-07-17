@@ -1,0 +1,17 @@
+{
+  "greeting": "Voca NK에 오신 것을 환영합니다!",
+  "start_button": "학습 시작",
+  "back_button": "뒤로가기",
+  "prev_word_button": "이전 단어",
+  "next_word_button": "다음 단어",
+  "pronounce_button": "발음 듣기",
+  "start_new_session_button": "다른 단어로 새로 시작",
+  "start_learning_button": "학습 시작",
+  "meaning": "뜻",
+  "pronunciation": "발음",
+  "example_sentence": "예문",
+  "loading_ai_response": "AI가 응답을 생성 중입니다...",
+  "press_start_button": "아래의 '학습 시작' 버튼을 눌러주세요.",
+  "session_complete_alert": "이번 세션의 모든 단어 학습을 완료했습니다! 새로운 세션을 시작합니다.",
+  "api_error_message": "API 호출 중 오류가 발생했습니다. 잠시 후 다시 시도해주세요."
+}

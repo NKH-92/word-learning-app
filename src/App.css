@@ -1,0 +1,141 @@
+/* General App Styles */
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Learning Page Specific Styles */
+.learning-container {
+  display: flex;
+  width: 90%;
+  height: 85vh;
+  margin-top: 60px; /* Space for the back button */
+}
+
+.word-card {
+  flex: 1;
+  border: 1px solid white;
+  padding: 20px;
+  margin-right: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #3a3f47;
+  border-radius: 10px;
+}
+
+.word-card h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.word-controls {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.chat-section {
+  flex: 2;
+  border: 1px solid white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  background-color: #3a3f47;
+  border-radius: 10px;
+}
+
+.chat-history {
+  flex-grow: 1;
+  overflow-y: auto;
+  margin-bottom: 10px;
+  padding-right: 10px; /* For scrollbar */
+}
+
+.chat-message {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-message.user {
+  align-items: flex-end;
+}
+
+.chat-message.model {
+  align-items: flex-start;
+}
+
+.message-bubble {
+  padding: 10px 15px;
+  border-radius: 20px;
+  max-width: 80%;
+  display: inline-block;
+  text-align: left;
+}
+
+.chat-message.user .message-bubble {
+  background-color: #0b93f6;
+  color: white;
+}
+
+.chat-message.model .message-bubble {
+  background-color: #444;
+  color: white;
+}
+
+
+.chat-input {
+  display: flex;
+}
+
+.chat-input input {
+  flex-grow: 1;
+  margin-right: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+}
+
+/* Media Query for Mobile Devices (e.g., iPhone 14 Pro) */
+@media (max-width: 768px) {
+  .App-header {
+    padding: 10px;
+    justify-content: flex-start; /* Align items to the top */
+  }
+
+  .learning-container {
+    flex-direction: column;
+    width: 100%;
+    height: auto; /* Let content define height */
+    margin-top: 50px; /* Adjust for smaller screens */
+  }
+
+  .word-card {
+    margin-right: 0;
+    margin-bottom: 20px;
+    flex: 0 0 auto; /* Don't grow, don't shrink, base on content */
+    min-height: 200px; /* Ensure a minimum height */
+  }
+
+  .chat-section {
+    flex: 1; /* Take remaining space */
+    height: 60vh; /* Set a specific height for chat on mobile */
+  }
+
+  .word-card h2 {
+    font-size: 2rem;
+  }
+}
